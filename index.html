@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Laboratorio</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <form id="formulario" action='https'>
+    <div class="form-css">
+      <h2 class="title"><strong>Create Account</strong></h2>
+      <p></p>
+      <fieldset>
+        <label>Nombre 
+          <input type="text" name="name" id="name" required />
+          <span class="error">
+        </label>
+        <p></p>
+        <label>Email 
+          <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
+          <span class="error"></span>
+        </label>
+        <p></p>
+        <label>Clave 
+          <input type="password" name="password1" id="password1" minlength="8" pattern="[a-zA-Z0-9]{8,}" required />
+          <span class="error"></span>
+        </label>
+        <p></p>
+        <label>Confirme su clave 
+          <input type="password" name="password2" id="password2" minlength="8" pattern="[a-zA-Z0-9]{8,}" id="password_input" required />
+          <span class="error"></span>
+        </label>
+      </fieldset>
+    <input type="submit" class="button-css" value="ENVIAR" onclick="validar_enviar()">
+    </form>
+</body>
+<script src="index.js"></script>
+</html>
